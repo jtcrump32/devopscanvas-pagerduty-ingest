@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DevOpsCanvas PagerDuty Snapshot",
+  "type": "object",
+  "properties": {
+    "services": {
+      "type": "array"
+    },
+    "schedules": {
+      "type": "array"
+    },
+    "oncalls": {
+      "type": "array"
+    },
+    "incidents": {
+      "type": "array"
+    },
+    "alerts_by_incident": {
+      "type": "object"
+    },
+    "log_entries_by_incident": {
+      "type": "object"
+    },
+    "change_events": {
+      "type": "array"
+    },
+    "metrics": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "incidents",
+    "metrics"
+  ]
+}

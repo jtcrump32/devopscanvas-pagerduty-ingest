@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DevOpsCanvas PagerDuty Metrics",
+  "type": "object",
+  "properties": {
+    "counts": {
+      "type": "object"
+    },
+    "mtta_seconds_median": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "mttr_seconds_median": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "per_service": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "counts"
+  ]
+}
